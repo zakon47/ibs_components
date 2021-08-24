@@ -9,7 +9,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "clean": "rimraf dist",
     "compile:post": "npm-prepare-dist",
-    "build": "npm run clean && webpack && npm run compile:post",
+    "build": "npm run clean && webpack && npm run build:declarations && npm run compile:post",
+    "build:declarations": "tsc --build tsconfig-for-declarations.json",
     "precommit": "lint-staged",
     "eslint:global": "eslint src -c src/.eslintrc.js --ext .js,.jsx,.tsx,.ts",
     "eslint:global:fix": "eslint --fix src -c src/.eslintrc.js --ext .js,.jsx,.tsx,.ts"
