@@ -1,0 +1,45 @@
+{
+  "name": "ibs-ui-kit",
+  "version": "1.0.3",
+  "description": "IBS library",
+  "main": "./index.js",
+  "module": "./index.js",
+  "scripts": {
+    "start": "HTTPS=true webpack-dev-server --mode development --open --hot",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "clean": "rimraf dist",
+    "compile:post": "npm-prepare-dist",
+    "build": "npm run clean && webpack && npm run compile:post",
+    "precommit": "lint-staged",
+    "eslint:global": "eslint src -c src/.eslintrc.js --ext .js,.jsx,.tsx,.ts",
+    "eslint:global:fix": "eslint --fix src -c src/.eslintrc.js --ext .js,.jsx,.tsx,.ts"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,tsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "Storybook",
+    "Webpack",
+    "React",
+    "Typescript"
+  ],
+  "author": "Vitaly Rozhkov",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.8.1",
+    "react-dom": "16.8.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "types": "./index.d.ts"
+}

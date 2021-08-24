@@ -1,0 +1,13 @@
+@import "_vars";
+@import "_fonts";
+@import "_mixins";
+@import "_normalize";
+@import "_reset";
+
+body {
+  background: $color-bg;
+}
+
+button{
+  border: 3px solid red;
+}
