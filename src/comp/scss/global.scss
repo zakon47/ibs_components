@@ -1,0 +1,60 @@
+@import "normalize";
+@import "var";
+@import "mixins";
+//@import "styles";
+@import "./sprite-color";
+@import "./sprite/sprite-icon";
+@import "./sprite/sprite-png.css";
+
+.custom_scroll {
+  @include scroll-color(var(--scroll-color), "");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 32rem;
+  //font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.02857rem;
+  @extend .custom_scroll;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  //border: 10px solid red;
+  border: 0;
+  -webkit-text-fill-color: var(--main-color);
+  //-webkit-box-shadow: 0 0 0 1000px rgba(15, 63, 81, .3) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  @extend .custom_scroll;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: no-drop;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

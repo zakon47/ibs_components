@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "HTTPS=true webpack-dev-server --mode development --open --hot",
+    "start": "cross-env HTTPS=true webpack-dev-server --mode development --open --hot",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "clean": "rimraf dist",
     "compile:post": "npm-prepare-dist",
@@ -70,6 +70,7 @@
     "body-parser": "1.18.3",
     "concurrently": "4.1.0",
     "connect": "3.6.6",
+    "cross-env": "^7.0.3",
     "css-loader": "2.1.0",
     "eslint": "6.0.1",
     "express": "4.16.4",

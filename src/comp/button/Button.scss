@@ -1,0 +1,159 @@
+:global {
+
+  @mixin element_mode($mode:"", $type:"p") {
+    background: var(--#{$type}-button#{$mode}-bg);
+    color: var(--#{$type}-button#{$mode}-color);
+    border: var(--#{$type}-button#{$mode}-border);
+    box-shadow: var(--#{$type}-button#{$mode}-box-shadow);
+    -webkit-border-radius: var(--#{$type}-button#{$mode}-radius);
+    -moz-border-radius: var(--#{$type}-button#{$mode}-radius);
+    border-radius: var(--#{$type}-button#{$mode}-radius);
+    .Button__leading, .Button__trailing{
+      color: var(--#{$type}-button#{$mode}-icon-color);
+      background: var(--#{$type}-button#{$mode}-icon-bg);
+      & svg{
+        fill: var(--#{$type}-button#{$mode}-icon-fill);
+      }
+    }
+    &.Button__size-large{
+      padding: var(--#{$type}-button#{$mode}-padding-large);
+    }
+    &.Button__size-medium{
+      padding: var(--#{$type}-button#{$mode}-padding-medium);
+    }
+    &.Button__size-small{
+      padding: var(--#{$type}-button#{$mode}-padding-small);
+    }
+    &.Button__size-extra-small{
+      padding: var(--#{$type}-button#{$mode}-padding-extra-small);
+    }
+    &:hover{
+      background: var(--#{$type}-button#{$mode}__hover_bg);
+      color: var(--#{$type}-button#{$mode}__hover_color);
+      border: var(--#{$type}-button#{$mode}__hover_border);
+      box-shadow: var(--#{$type}-button#{$mode}__hover_box-shadow);
+      -webkit-border-radius: var(--#{$type}-button#{$mode}__hover_radius);
+      -moz-border-radius: var(--#{$type}-button#{$mode}__hover_radius);
+      border-radius: var(--#{$type}-button#{$mode}__hover_radius);
+    }
+    &:focus{
+      background: var(--#{$type}-button#{$mode}__focus_bg);
+      color: var(--#{$type}-button#{$mode}__focus_color);
+      border: var(--#{$type}-button#{$mode}__focus_border);
+      box-shadow: var(--#{$type}-button#{$mode}__focus_box-shadow);
+      -webkit-border-radius: var(--#{$type}-button#{$mode}__focus_radius);
+      -moz-border-radius: var(--#{$type}-button#{$mode}__focus_radius);
+      border-radius: var(--#{$type}-button#{$mode}__focus_radius);
+    }
+    &:active{
+      background: var(--#{$type}-button#{$mode}__active_bg);
+      color: var(--#{$type}-button#{$mode}__active_color);
+      border: var(--#{$type}-button#{$mode}__active_border);
+      box-shadow: var(--#{$type}-button#{$mode}__active_box-shadow);
+      -webkit-border-radius: var(--#{$type}-button#{$mode}__active_radius);
+      -moz-border-radius: var(--#{$type}-button#{$mode}__active_radius);
+      border-radius: var(--#{$type}-button#{$mode}__active_radius);
+    }
+    &:disabled{
+      background: var(--#{$type}-button#{$mode}__disabled_bg);
+      color: var(--#{$type}-button#{$mode}__disabled_color);
+      border: var(--#{$type}-button#{$mode}__disabled_border);
+      box-shadow: var(--#{$type}-button#{$mode}__disabled_box-shadow);
+      -webkit-border-radius: var(--#{$type}-button#{$mode}__disabled_radius);
+      -moz-border-radius: var(--#{$type}-button#{$mode}__disabled_radius);
+      border-radius: var(--#{$type}-button#{$mode}__disabled_radius);
+      opacity: var(--#{$type}-button#{$mode}__disabled_opacity);
+      .Button__txt,.Button__leading, .Button__trailing{
+        opacity: var(--#{$type}-button#{$mode}__disabled_opacity-inner);
+      }
+      .Button__leading, .Button__trailing{
+        color: var(--#{$type}-button#{$mode}__disabled-icon-color, var(--#{$type}-button#{$mode}-icon-color));
+        background: var(--#{$type}-button#{$mode}__disabled-icon-bg, var(--#{$type}-button#{$mode}-icon-bg));
+        & svg{
+          fill: var(--#{$type}-button#{$mode}__disabled-icon-fill, var(--#{$type}-button#{$mode}-icon-fill));
+        }
+      }
+    }
+  }
+  .Button {
+    font-family: 'Inter', sans-serif !important;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    &__size {
+      &-extra-small {
+        font-size: 14px;
+      }
+      &-small, &-extra-small{
+        .Button__leading, .Button__trailing{
+          width: 18px;
+          height: 18px;
+          & svg{
+            width: 12px;
+          }
+        }
+      }
+    }
+    &__color{
+      &-positive{
+        &-primary{
+          @include element_mode("")
+        }
+        &-secondary{
+          @include element_mode("-secondary")
+        }
+        &-tertiary{
+          @include element_mode("-tertiary")
+        }
+      }
+      &-negative{
+        &-primary{
+          @include element_mode("","n")
+        }
+        &-secondary{
+          @include element_mode("-secondary","n")
+        }
+        &-tertiary{
+          @include element_mode("-tertiary","n")
+        }
+      }
+    }
+    &__leading, &__trailing{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      font-size: 12px;
+      overflow: hidden;
+      & svg{
+        width: 12px;
+      }
+    }
+    &__block{
+      width: 100%;
+    }
+    &__leading{
+      margin-right: 10px;
+      margin-left: -2px;
+    }
+    &__trailing{
+      margin-left: 10px;
+      margin-right: -2px;
+    }
+  }
+
+
+
+}

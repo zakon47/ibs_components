@@ -1,0 +1,297 @@
+:root {
+
+  //[POSITIVE]
+  //[primary]
+  //size
+  --p-button-padding-large: 16px 32px;
+  --p-button-padding-medium: 12px 32px;
+  --p-button-padding-small: 8px 32px;
+  --p-button-padding-extra-small: 6px 16px;
+
+  //icons
+  --p-button-icon-bg: #FAFCFF;
+  --p-button-icon-color: #0049D9;
+  --p-button-icon-fill: #0049D9;
+  --p-button__disabled-icon-bg: #FAFCFF;
+
+  //colors
+  --p-button-bg: #0049D9;
+  --p-button-color: #FAFCFF;
+  --p-button-border: none;
+  --p-button-box-shadow: none;
+  --p-button-radius: 8px;
+
+  --p-button__hover_bg: #0D5EFF;
+  --p-button__hover_color: #FAFCFF;
+  --p-button__hover_border: none;
+  --p-button__hover_box-shadow: 0px 12px 16px -8px rgba(0, 47, 140, 0.35);
+  --p-button__hover_radius: 8px;
+
+  --p-button__focus_bg: #0D5EFF;
+  --p-button__focus_color: #FAFCFF;
+  --p-button__focus_border: none;
+  --p-button__focus_box-shadow: 0px 0px 0px 4px rgba(0, 73, 217, 0.5);
+  --p-button__focus_radius: 8px;
+
+  --p-button__active_bg: #0941B2;
+  --p-button__active_color: #FAFCFF;
+  --p-button__active_border: none;
+  --p-button__active_box-shadow: none;
+  --p-button__active_radius: 8px;
+
+  --p-button__disabled_bg: #5782D9;
+  --p-button__disabled_color: #FAFCFF;
+  --p-button__disabled_border: none;
+  --p-button__disabled_box-shadow: none;
+  --p-button__disabled_radius: 8px;
+  --p-button__disabled_opacity: 1;
+  --p-button__disabled_opacity-inner: .7;
+
+
+
+
+  //[secondary]
+  //size
+  --p-button-secondary-padding-large: 14px 32px;
+  --p-button-secondary-padding-medium: 10px 32px;
+  --p-button-secondary-padding-small: 6px 32px;
+  --p-button-secondary-padding-extra-small: 4px 16px;
+
+  //icons
+  --p-button-secondary-icon-bg: #0049D9;
+  --p-button-secondary-icon-color: #eee;
+  --p-button-secondary-icon-fill: #eee;
+
+  //colors
+  --p-button-secondary-bg: rgba(13, 26, 51, 0.05);
+  --p-button-secondary-color: #0049D9;
+  --p-button-secondary-border: 2px solid transparent;
+  --p-button-secondary-box-shadow: none;
+  --p-button-secondary-radius: 8px;
+
+  --p-button-secondary__hover_bg: rgba(13, 26, 51, 0.1);
+  --p-button-secondary__hover_color: #0049D9;
+  --p-button-secondary__hover_border: 2px solid transparent;
+  --p-button-secondary__hover_box-shadow: none;
+  --p-button-secondary__hover_radius: 8px;
+
+  --p-button-secondary__focus_bg: rgba(13, 26, 51, 0.05);
+  --p-button-secondary__focus_color: #0049D9;
+  --p-button-secondary__focus_border: 2px solid rgba(0, 73, 217, 0.5);
+  --p-button-secondary__focus_box-shadow: none;
+  --p-button-secondary__focus_radius: 8px;
+
+  --p-button-secondary__active_bg: rgba(0, 73, 217, 0.25);
+  --p-button-secondary__active_color: #0049D9;
+  --p-button-secondary__active_border: 2px solid transparent;
+  --p-button-secondary__active_box-shadow: none;
+  --p-button-secondary__active_radius: 8px;
+
+  --p-button-secondary__disabled_bg: rgba(13, 26, 51, 0.05);
+  --p-button-secondary__disabled_color: #0049D9;
+  --p-button-secondary__disabled_border: 2px solid transparent;
+  --p-button-secondary__disabled_box-shadow: none;
+  --p-button-secondary__disabled_radius: 8px;
+  --p-button-secondary__disabled_opacity: .6;
+
+
+
+
+
+  //[tertiary]
+  //size
+  --p-button-tertiary-padding-large: 14px 32px;
+  --p-button-tertiary-padding-medium: 10px 32px;
+  --p-button-tertiary-padding-small: 6px 32px;
+  --p-button-tertiary-padding-extra-small: 4px 16px;
+
+  //icons
+  --p-button-tertiary-icon-bg: #0049D9;
+  --p-button-tertiary-icon-color: #eee;
+  --p-button-tertiary-icon-fill: #eee;
+  --p-button-tertiary__disabled-icon-bg: #989DA6;
+  --p-button-tertiary__disabled-icon-color: #eee;
+  --p-button-tertiary__disabled-icon-fill: #eee;
+
+  //colors
+  --p-button-tertiary-bg: transparent;
+  --p-button-tertiary-color: #0049D9;
+  --p-button-tertiary-border: 2px solid transparent;
+  --p-button-tertiary-box-shadow: none;
+  --p-button-tertiary-radius: 8px;
+
+  --p-button-tertiary__hover_bg: rgba(13, 26, 51, 0.05);
+  --p-button-tertiary__hover_color: #0049D9;
+  --p-button-tertiary__hover_border: 2px solid transparent;
+  --p-button-tertiary__hover_box-shadow: none;
+  --p-button-tertiary__hover_radius: 8px;
+
+  --p-button-tertiary__focus_bg: transparent;
+  --p-button-tertiary__focus_color: #0049D9;
+  --p-button-tertiary__focus_border: 2px solid rgba(0, 73, 217, 0.5);
+  --p-button-tertiary__focus_box-shadow: none;
+  --p-button-tertiary__focus_radius: 8px;
+
+  --p-button-tertiary__active_bg: rgba(0, 73, 217, 0.15);
+  --p-button-tertiary__active_color: #0049D9;
+  --p-button-tertiary__active_border: 2px solid transparent;
+  --p-button-tertiary__active_box-shadow: none;
+  --p-button-tertiary__active_radius: 8px;
+
+  --p-button-tertiary__disabled_bg: transparent;
+  --p-button-tertiary__disabled_color: #989DA6;
+  --p-button-tertiary__disabled_border: 2px solid transparent;
+  --p-button-tertiary__disabled_box-shadow: none;
+  --p-button-tertiary__disabled_radius: 8px;
+  --p-button-tertiary__disabled_opacity: 1;
+
+
+
+  //[NEGATIVE]
+  //[primary]
+  //size
+  --n-button-padding-large: 16px 32px;
+  --n-button-padding-medium: 12px 32px;
+  --n-button-padding-small: 8px 32px;
+  --n-button-padding-extra-small: 6px 16px;
+
+  //icons
+  --n-button-icon-bg: #FAFCFF;
+  --n-button-icon-color: #E63948;
+  --n-button-icon-fill: #E63948;
+  --n-button__disabled-icon-color: #FF8C96;
+  --n-button__disabled-icon-fill: #FF8C96;
+
+  //colors
+  --n-button-bg: #E63948;
+  --n-button-color: #FAFCFF;
+  --n-button-border: none;
+  --n-button-box-shadow: none;
+  --n-button-radius: 8px;
+
+  --n-button__hover_bg: #FF5967;
+  --n-button__hover_color: #FAFCFF;
+  --n-button__hover_border: none;
+  --n-button__hover_box-shadow: 0px 12px 16px -8px rgba(191, 38, 51, 0.35);
+  --n-button__hover_radius: 8px;
+
+  --n-button__focus_bg: #E63948;
+  --n-button__focus_color: #FAFCFF;
+  --n-button__focus_border: none;
+  --n-button__focus_box-shadow: 0px 0px 0px 4px rgba(229, 57, 72, 0.3);
+  --n-button__focus_radius: 8px;
+
+  --n-button__active_bg: #CC3340;
+  --n-button__active_color: #FAFCFF;
+  --n-button__active_border: none;
+  --n-button__active_box-shadow: none;
+  --n-button__active_radius: 8px;
+
+  --n-button__disabled_bg: #FF8C96;
+  --n-button__disabled_color: #FAFCFF;
+  --n-button__disabled_border: none;
+  --n-button__disabled_box-shadow: none;
+  --n-button__disabled_radius: 8px;
+  --n-button__disabled_opacity: 1;
+  --n-button__disabled_opacity-inner: .7;
+
+
+
+
+  //[secondary]
+  //size
+  --n-button-secondary-padding-large: 14px 32px;
+  --n-button-secondary-padding-medium: 10px 32px;
+  --n-button-secondary-padding-small: 6px 32px;
+  --n-button-secondary-padding-extra-small: 4px 16px;
+
+  //icons
+  --n-button-secondary-icon-bg: #E5505D;
+  --n-button-secondary-icon-color: #eee;
+  --n-button-secondary-icon-fill: #eee;
+
+  //colors
+  --n-button-secondary-bg: rgba(13, 26, 51, 0.05);
+  --n-button-secondary-color: #E5505D;
+  --n-button-secondary-border: 2px solid transparent;
+  --n-button-secondary-box-shadow: none;
+  --n-button-secondary-radius: 8px;
+
+  --n-button-secondary__hover_bg: rgba(229, 55, 84, 0.15);
+  --n-button-secondary__hover_color: #E5505D;
+  --n-button-secondary__hover_border: 2px solid transparent;
+  --n-button-secondary__hover_box-shadow: none;
+  --n-button-secondary__hover_radius: 8px;
+
+  --n-button-secondary__focus_bg: rgba(13, 26, 51, 0.05);
+  --n-button-secondary__focus_color: #E5505D;
+  --n-button-secondary__focus_border: 2px solid rgba(229, 55, 84, 0.25);
+  --n-button-secondary__focus_box-shadow: none;
+  --n-button-secondary__focus_radius: 8px;
+
+  --n-button-secondary__active_bg: rgba(229, 55, 84, 0.25);
+  --n-button-secondary__active_color: #E5505D;
+  --n-button-secondary__active_border: 2px solid transparent;
+  --n-button-secondary__active_box-shadow: none;
+  --n-button-secondary__active_radius: 8px;
+
+  --n-button-secondary__disabled_bg: rgba(13, 26, 51, 0.05);
+  --n-button-secondary__disabled_color: #E5505D;
+  --n-button-secondary__disabled_border: 2px solid transparent;
+  --n-button-secondary__disabled_box-shadow: none;
+  --n-button-secondary__disabled_radius: 8px;
+  --n-button-secondary__disabled_opacity: .6;
+
+
+
+
+
+  //[tertiary]
+  //size
+  --n-button-tertiary-padding-large: 14px 32px;
+  --n-button-tertiary-padding-medium: 10px 32px;
+  --n-button-tertiary-padding-small: 6px 32px;
+  --n-button-tertiary-padding-extra-small: 4px 16px;
+
+  //icons
+  --n-button-tertiary-icon-bg: #E5505D;
+  --n-button-tertiary-icon-color: #eee;
+  --n-button-tertiary-icon-fill: #eee;
+  --n-button-tertiary__disabled-icon-bg: #989DA6;
+  --n-button-tertiary__disabled-icon-color: #eee;
+  --n-button-tertiary__disabled-icon-fill: #eee;
+
+  //colors
+  --n-button-tertiary-bg: transparent;
+  --n-button-tertiary-color: #E5505D;
+  --n-button-tertiary-border: 2px solid transparent;
+  --n-button-tertiary-box-shadow: none;
+  --n-button-tertiary-radius: 8px;
+
+  --n-button-tertiary__hover_bg: rgba(229, 55, 84, 0.15);
+  --n-button-tertiary__hover_color: #E5505D;
+  --n-button-tertiary__hover_border: 2px solid transparent;
+  --n-button-tertiary__hover_box-shadow: none;
+  --n-button-tertiary__hover_radius: 8px;
+
+  --n-button-tertiary__focus_bg: transparent;
+  --n-button-tertiary__focus_color: #E5505D;
+  --n-button-tertiary__focus_border: 2px solid rgba(229, 55, 84, 0.25);
+  --n-button-tertiary__focus_box-shadow: none;
+  --n-button-tertiary__focus_radius: 8px;
+
+  --n-button-tertiary__active_bg: rgba(229, 55, 84, 0.25);
+  --n-button-tertiary__active_color: #E5505D;
+  --n-button-tertiary__active_border: 2px solid transparent;
+  --n-button-tertiary__active_box-shadow: none;
+  --n-button-tertiary__active_radius: 8px;
+
+  --n-button-tertiary__disabled_bg: transparent;
+  --n-button-tertiary__disabled_color: #989DA6;
+  --n-button-tertiary__disabled_border: 2px solid transparent;
+  --n-button-tertiary__disabled_box-shadow: none;
+  --n-button-tertiary__disabled_radius: 8px;
+  --n-button-tertiary__disabled_opacity: 1;
+
+}
+

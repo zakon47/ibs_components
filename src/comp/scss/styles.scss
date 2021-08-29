@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import "./mixins";
+@import "../../comp/button/Button";
+
+$p: 15px;
+
+:global{
+  *{
+    font-family: 'Inter', sans-serif !important;
+  }
+  .Button {
+    @include none-select();
+  }
+  .poligon{
+    margin-left: $p;
+    tr{
+      td{
+        padding: $p $p 0 0;
+      }
+    }
+  }
+}
